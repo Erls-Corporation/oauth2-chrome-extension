@@ -54,12 +54,12 @@
 		 * _scopes            - API permissions being requested.
 		 *  
 		 */
-		_access_token_url: "", // <------------------------------- URL to api where token is request
-		_authorization_url: "", // <---------------- URL to api where user authorizes extension with
+		_access_token_url: "https://github.com/login/oauth/access_token",
+		_authorization_url: "https://github.com/login/oauth/authorize",
 		_client_id: "", // <--------------------------------------------------------- Application ID
 		_client_secret: "", // <------------------------------------------------- Application secret
-		_redirect_url: "", // <-------------------- URL where api will redirect access token request
-		_scopes: [''], // <----------------------------------------- API permissions being requested
+		_redirect_url: "https://github.com/robots.txt",
+		_scopes: ['repo'],
 		
 		/**
 		 * Begins the OAuth2 process.
